@@ -7,6 +7,8 @@
   <title>Gains</title>
   <link rel="icon" href="./img/logo.png" sizes="2000x2000" type="image/png">
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/tracker.css">
+  <script src="js/tracker.js" type="module"></script>
 </head>
 <body>
   <nav id="topNav">
@@ -21,6 +23,10 @@
       </ul>
     </div>
   </nav>
+  <div id="overlay" >
+      <div id="workout"></div>
+      </div>
+  </div>
   <section id="foo">
     <div class="container">
       <h1>Weekly Statistics</h1>
@@ -29,7 +35,7 @@
   <section id="foo">
     <div class="container">
       <h1>Quick start</h1>
-      <a href='emptyTR.html'>Start Empty Workout</a>
+      <a onclick="on()">New Workout</a>
       <a href="#">Quick CheckIn</a>
     </div>
   </section>
@@ -69,5 +75,14 @@
     <p>This website is a student project work and does not reflect Constructor University Bremen opinions or views.
       It is not a  part of the official Constructor University Bremen online presence.</p>
   </footer>
+  <script>
+    function on() {
+      document.getElementById("overlay").style.display = "block";
+    }
+
+    function off() {
+      document.getElementById("overlay").style.display = "none";
+    } 
+  </script>
 </body>
 </html>
