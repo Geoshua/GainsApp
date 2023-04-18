@@ -1,3 +1,8 @@
+<style>
+  #quickCheckIn {
+    margin-left: 40%;
+  }
+</style>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,9 +27,19 @@
       </ul>
     </div>
   </nav>
-  <div id="overlay" >
+  
+  <div class="overlay" id="tracker-div">
       <div id="workout"></div>
       </div>
+  </div>
+  <div class="overlay" id="quickCheckIn-div">
+    <div class="container" id="quickCheckIn">
+      <div id="bar">
+        <h1>User Name</h1>
+        <img src ="img/QR example.png" >
+        <span onclick="toggleOverlay('quickCheckIn-div')">Turn Off</p>
+      </div>
+    </div>
   </div>
   <section id="foo">
     <div class="container">
@@ -34,14 +49,14 @@
   <section id="foo">
     <div class="container">
       <h1>Quick start</h1>
-      <a onclick="on()">New Workout</a>
-      <a href="#">Quick CheckIn</a>
+      <a onclick="toggleOverlay('tracker-div')">Empty Workout</a>
+      <a onclick="toggleOverlay('quickCheckIn-div')">Quick CheckIn</a>
     </div>
   </section>
   <section id="foo">
     <div class="container">
       <h1>Routines</h1>
-      <a href="newRoutine.html">Create New Routine</a>
+      <a href="newRoutine.html">New Routine</a>
       <a href="feed.html">Explore</a>
     </div>
     <div class="container">
@@ -77,12 +92,16 @@
   <script src="js/tracker.js" type="module"></script>
   <script>
     function on() {
-      document.getElementById("overlay").style.display = "block";
+      document.getElementById("tracker").style.display = "block";
     }
 
     function off() {
-      document.getElementById("overlay").style.display = "none";
+      document.getElementById("tracker").style.display = "none";
     } 
+    function toggleOverlay(toggleItem) {
+        var item = document.getElementById(toggleItem);
+        item.style.display = (item.style.display == "none" ? "block" : "none");
+    }
   </script>
 </body>
 </html>
