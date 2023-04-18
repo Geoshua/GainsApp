@@ -34,6 +34,14 @@ a{
   font-weight:bold;
   cursor:pointer;
 }
+
+ul {
+  list-style:none;
+}
+
+#page-container {
+  size: 100%;
+}
 #topNav {
   background:  #282634;
   color: #ff4057;
@@ -45,7 +53,6 @@ a{
 #topNav ul {
   padding: 0;
   margin: 0 ;
-  list-style: none;
 }
 
 #topNav li {
