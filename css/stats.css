@@ -1,4 +1,4 @@
-/* Grid-related CSS */
+/* Calendar Related  CSS */
 
 :root {
   --square-size: 15px;
@@ -81,4 +81,98 @@ body {
 
 ul {
 	list-style-type:none;
+}
+
+/* Exercise History CSS*/
+.history {
+	font-size: 14px;
+	border-collapse: collapse;
+	width: 400px;
+	align-items: center;
+	display:flexbox;
+	margin-top: 10%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.history,
+.history * {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color:#95959b;
+}
+
+.history th {
+	font-size:1.15em;
+	text-align: left;
+	font-weight: normal;
+	color: #ff4057;
+	background: #282634;
+}
+
+.history th,
+.history td {
+	padding:0.75em;
+}
+
+.history_entries .history_row {
+	background: #35353f;
+}
+
+.history_entries .history_row:nth-child(odd){
+	background: #414149;
+}
+
+.history_date,
+.history_workout,
+.history_duration {
+	display: inline-block;
+	box-sizing:border-box;
+	font-size: 1em;
+	height: 2.5em;
+	padding: 0.5em 0;
+	border: none;
+	outline:none;
+	background:none;
+}
+
+.history_duration {
+	text-align:right;
+}
+
+.history_button {
+	display:flex;
+	align-items: left;
+	justify-content:left;
+	background: none;
+	border: none;
+	outline: none;
+	color: red;
+	font-size: 1.5em;
+	margin-left:0.5em;
+	cursor: pointer;
+}
+
+.history_button:hover {
+	background: rgba(0,0,0,0.1);
+}
+
+.history_row_add {
+	border-top: 3px solid #282634;
+	border-bottom: 3px solid #282634;
+	background: #35353f;
+}
+.history_row_add td {
+	text-align:right;
+}
+
+.history_exit {
+	display:inline-block;
+	padding: 0.8em 1em;
+	color:#fa6576;
+	cursor: pointer;
+	text-align: left;
+}
+
+.history_exit:hover {
+	background:rgba(0,0,0,0.1);
 }
