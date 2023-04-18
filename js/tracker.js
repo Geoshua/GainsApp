@@ -36,7 +36,7 @@ class WorkoutTracker {
 				<tbody>
 					<tr class="tracker_row tracker_row_add">
 					<td colspan ="1">	
-						<span class="tracker_exit" onclick="off()">Turn off</button>
+						<span class="tracker_exit" onclick="toggleOverlay('tracker-div')">Turn off</button>
 					</td>
 					<td colspan = "3">
 						<span class="tracker_add">Add Entry &plus;</span>
