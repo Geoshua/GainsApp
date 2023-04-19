@@ -2,6 +2,14 @@
   #quickCheckIn {
     margin-left: 40%;
   }
+  #quickCheckIn-text {
+    text-align: center;
+    cursor: pointer;
+    margin-top:4%;
+    margin-left: 42%;
+    font-size: 50px;
+
+  }
 </style>
 <!DOCTYPE html>
 <html lang="en">
@@ -37,7 +45,7 @@
       <div id="bar">
         <h1>User Name</h1>
         <img src ="img/QR example.png" >
-        <span onclick="toggleOverlay('quickCheckIn-div')">Turn Off</p>
+        <span id="quickCheckIn-text"onclick="toggleOverlay('quickCheckIn-div')">&times;</p>
       </div>
     </div>
   </div>

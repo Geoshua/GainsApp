@@ -61,7 +61,7 @@
 	background: none;
 	border: none;
 	outline: none;
-	color: red;
+	color: rgb(255, 0, 0);
 	font-size: 1.5em;
 	margin-left:0.5em;
 	cursor: pointer;
