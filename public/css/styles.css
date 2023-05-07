@@ -5,7 +5,7 @@ body {
 	color: #eee;
   background: #35353f;
   font-size: 16px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Futura', Tahoma, Geneva, Verdana, sans-serif;
   line-height:1cm;
   margin: 0;
 }
@@ -26,7 +26,7 @@ h1 {
 }
 
 p {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Futura', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 20px;
 }
 a{
@@ -45,33 +45,35 @@ ul {
 #topNav {
   background:  #282634;
   color: #ff4057;
-  position: -webkit-sticky;
-  position: sticky;
   top: 0;
   line-height: 1.6cm;
+  overflow: hidden;
+  display:flex;
 }
-#topNav ul {
-  padding: 0;
-  margin: 0 ;
+.sticky {
+  position:fixed;
+  top:0;
+  width:100%;
 }
-
-#topNav li {
-  display: inline;
-  padding: 5px 10px;
+#topNav img{
+  padding: 10px 10px;
 }
 #topNav a {
   color: #ff4057;
   font-size: 18px;
-  border-radius: 20px;
-  padding: 5px 10px;
+  padding: 20px 20px;
+  float: left;
 }
 #topNav a:hover {
-  color: #2c2c34;
-  background:#ff4057;
-  border-radius: 10px;
-  padding: 5px 10px;
-  width: 200px;
-  height: 10px;
+  color: #282634;
+  background:#95959b;
+}
+#topNav a.active {
+  background-color:#ff4057;
+  color:#282634;
+}
+.topNav-right {
+  float:right;
 }
 
 #foo {

@@ -30,7 +30,7 @@
 	font-size: 30px;
 	margin-bottom: 60px;
 	position: relative;
-	color: #ff4057;
+	color: #ff4c60;
 }
 
 .form-box h1::after{
@@ -45,7 +45,7 @@
 	transform: translateX(-50%);
 }
 
-input{
+.login-container input{
 	width:100%;
 	background:transparent;
 	border:0;
@@ -68,14 +68,16 @@ input{
 	margin-left: 15px;
 	color:darkgrey;;
 }
-form p{
+
+login-container p{
 	text-align:left;
 	font-size: 13px;
 }
-form p a{
+login-container a{
 	text-decoration: none;
-	color:#ff4057;
+	color:#ff4c60;
 }
+
 .button-field{
 	width:100%;
 	display:flex;
