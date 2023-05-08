@@ -34,3 +34,12 @@ function navSticky() {
     navbar.classList.remove("sticky");
   }
 }
+
+function navMedia() {
+  var x = document.getElementById("topNav");
+  if (x.className === "topNav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
