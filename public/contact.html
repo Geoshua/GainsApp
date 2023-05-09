@@ -5,20 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Gains</title>
-  <link rel="icon" href="./img/logo.png" sizes="2000x2000" type="image/png">
+  <link rel="icon" href="./img/icon.png" sizes="2000x2000" type="image/png">
   <link rel="stylesheet" href="./css/styles.css">
+  <script src="js/app.js"type="module"></script>
+  <script src="js/page-control.js"></script>
 </head>
 <body>
-  <nav id="topNav">
+  <nav class="topNav" id="topNav">
+    <img src="./img/logo.png" alt="GAINS" width="360px" style="padding-right:30px;object-fit:cover" >
+
     <div class="container">
-      <ul>
-        <li><img src="./img/logo.png" alt="GAINS" width="200"></li>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="stats.html">Stats</a></li>
-        <li><a href="feed.html">Feed</a></li>
-        <li><a href="appointments.html">Appointments</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+      <a href="main.html">Home</a>
+      <a href="food.html">Foods</a>
+      <a href="stats.html">Stats</a>
+      <a href="feed.html">Social</a>
+      <a href="appointments.html">Appointments</a>
+      <a class="active" href="contact.html">Contact</a>
+      <div class="topNav-right">
+        <a id="sign-out-button">Sign Out</a>
+        <a href="javascript:void(0);" class="icon" onclick="navMedia()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
     </div>
   </nav>
   <section id="foo">

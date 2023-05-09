@@ -1,3 +1,8 @@
+<style>
+  html{
+    scroll-behavior: smooth;
+  }
+</style>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,22 +10,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Gains</title>
-  <link rel="icon" href="./img/logo.png" sizes="2000x2000" type="image/png">
+  <link rel="icon" href="./img/icon.png" sizes="2000x2000" type="image/png">
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="./css/feed.css">
+  <script src="js/app.js"type="module"></script>
+  <script src="js/page-control.js"></script>
+  <script src="https://kit.fontawesome.com/f1fe956918.js" crossorigin="anonymous"></script>
 </head>
 <body>    
   <div id="top-nav-container">
-    <nav id="topNav">
+    <nav class="topNav" id="topNav">
+      <img src="./img/logo.png" alt="GAINS" width="360px" style="padding-right:30px;object-fit:cover" >
       <div class="container">
-        <ul>
-          <li><img src="./img/logo.png" alt="GAINS" width="200"></li>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="stats.html">Stats</a></li>
-          <li><a href="feed.html">Feed</a></li>
-          <li><a href="appointments.html">Appointments</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <a href="main.html">Home</a>
+        <a href="food.html">Foods</a>
+        <a href="stats.html">Stats</a>
+        <a class="active" href="feed.html">Social</a>
+        <a href="appointments.html">Appointments</a>
+        <a href="contact.html">Contact</a>
+        <div class="topNav-right">
+          <a id="sign-out-button">Sign Out</a>
+          <a href="javascript:void(0);" class="icon" onclick="navMedia()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
       </div>
     </nav>
   </div>
@@ -29,11 +42,12 @@
       <nav id="sideNav">
         <div class="container">
           <ul>
-            <li><a href="#">Search</a></li>
-            <li><a href="#">Notification</a></li>
-            <li><a href="#">Messages</a></li>
-            <li><a href="#">Explore</a></li>
-            <li><a href="#">Profile</a></li>
+            <li><a href="#"style="top:160px;background-color:#ff4057;">Search<i class="fa fa-magnifying-glass"style="text-indent:-1px;"></i></a></li>
+            <li><a href="#"style="top:230px;background-color:#fd8d9a;">Notification<i class="fa fa-fw fa-bell"style="text-indent:-1px;"></i></a></li>
+            <li><a href="#"style="top:300px;background-color:#ff4057;">Messages<i class="fa fa-fw fa-envelope"style="text-indent:-1px;"></i></a></li>
+            <li><a href="#"style="top:370px;background-color:#fd8d9a;">Explore<i class="fa fa-fw fa-compass"style="text-indent:-1px;"></i></a></li>
+            <li><a href="#"style="top:440px;background-color:#ff4057;">Profile<i class="fa fa-fw fa-user"style="text-indent:-1px;"></i></a></li>
+            <li><a href="#top"style="top:510px;background-color:#fd8d9a;">Top<i class="fa-solid fa-angles-up"style="text-indent:-1px;"></i></a></li>
           </ul>
         </div>
       </nav>

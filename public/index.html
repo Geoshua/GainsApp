@@ -87,16 +87,17 @@
   .hl {
     color:#ff4057;
   }
-  .topNav .icon {
-    display: none;
+
+  @media screen and (max-width:1366px) {
+    .section-container {
+      width:100%;
+    } 
   }
   @media only screen and (max-device-width:1366px) {
     .homepage-background {
       background-attachment: scroll;
     }
-    .section-container {
-      width:100%;
-    }
+
   }
 </style>
 <!DOCTYPE html>
@@ -127,10 +128,10 @@
     </div>
   </nav>
   <!-- Homepage-->
-  <div class="homepage-container page-container" id="homepage-container">
+  <div class="homepage-container page-container" id="homepage-container" style="padding:0;">
     <div class="homepage-background">
       <div class="homepage-content">
-        <div class="section-container" style="height:auto;padding-top:7%;">
+        <div class="section-container" style="height:80%;padding-top:7%;">
           <div class="left-container">
             <h1><span class="hl">G</span>ym <span class="hl">A</span>ssistance and <span class="hl">I</span>ntegrated <span class="hl">N</span>utrition <span class="hl">S</span>ystem</h1><br>
             <p>The ultimate fitness tracker for all your fitness lifestyle needs, whether it's a jog in the park, lifting weights, or a game of badminton. Our app comes with a calorie tracker and a stats page to track your health goals. Connect with your friends and see each others progress. Find local gyms and schedule appointments with them. Get fit today!</p><br>
