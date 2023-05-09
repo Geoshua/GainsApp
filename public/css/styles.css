@@ -49,11 +49,47 @@ ul {
   line-height: 1.6cm;
   overflow: hidden;
   display:flex;
+  position:sticky;
+	width: 100%;
 }
+
+#sideNav a {
+  position: fixed; /* Position them relative to the browser window */
+  left: -125px; /* Position them outside of the screen */
+  transition: 0.3s; /* Add transition on hover */
+  padding: 15px; /* 15px padding */
+  width: 170px; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Increase font size */
+  color: white; /* White text color */
+  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+  text-indent: -60px;
+  text-align: left;
+}
+
+#sideNav i{
+  left:0;
+  vertical-align: center;
+  align-items: center;
+  float:right;
+  padding:10px;
+}
+#sideNav a:hover{
+  left: 0; /* On mouse-over, make the elements appear as they should */
+  text-indent:0;
+  overflow:hidden;
+}
+
 .sticky {
   position:fixed;
   top:0;
   width:100%;
+}
+.sticky + .page-container {
+  padding-top: 60px;
+}
+.page-container {
+  padding: 16px;
 }
 #topNav img{
   padding: 10px 10px;
@@ -161,14 +197,45 @@ ul {
   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
 }
 
-@media screen and (max-width: 1366px) {
+.topNav .icon {
+    display: none;
+  }
+
+input{
+  width:300px;
+  font-size: large;
+  padding:12px 20px;
+  margin:8px 0;
+  box-sizing:border-box;
+  color:white;
+  background-color: #626270;
+  border-color: #626270;
+  box-shadow: none;
+  outline:0;
+  border: 0;
+}
+
+.search-box-icon{
+  width:350px;
+  background-color: #626270;
+  margin-left:auto;
+  margin-right:auto;
+  border-radius: 5px;
+  border:#282634;
+  box-shadow: #282634;
+}
+.center-div{
+  margin-left:auto;
+  margin-right:auto;
+}
+@media screen and (max-width: 600px) {
   .topNav a:not(:first-child) {display: none;}
   .topNav a.icon {
     float: right;
     display: block;
   }
 }
-@media only screen and (max-device-width:1366px) {
+@media only screen and (max-device-width:600px) {
   .topNav.responsive {position: relative;}
   .topNav.responsive .icon {
     position: absolute;
